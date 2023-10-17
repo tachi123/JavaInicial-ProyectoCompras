@@ -1,0 +1,34 @@
+package com.curso.compras.models;
+
+public class Persona{
+
+	private String nombre;
+	private String apellido;
+	
+	//Método constructor de la clase persona
+	public Persona(String nombre, String apellido) {
+		this.setApellido(apellido);
+		this.setNombre(nombre);
+	}
+	
+	public String toString() {
+		return this.apellido+", "+this.nombre;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+	
+}
