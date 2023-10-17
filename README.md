@@ -1,6 +1,11 @@
 # Java Inicial - Proyecto Compras
 
-* Proyecto utilizado a modo de ejercitación como introducción en la Programación en JAVA *
+**Proyecto utilizado a modo de ejercitación como introducción en la Programación en JAVA**
+
+Las instrucciones para ejecutar el proyecto maven e iniciarse en la ejecución de proyectos MAVEN son:
+- Ingresar a la línea de comandos o consola (CMD) dentro de la carpeta donde se descargo/clonó el proyecto
+- (Se debe tener instalado Maven) mvn package
+- java -jar ./target/compras-1.0.jar
 
 ## Conceptos implementados en el proyecto
 
