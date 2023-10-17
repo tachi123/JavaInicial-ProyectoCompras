@@ -1,8 +1,9 @@
 package com.curso.compras.models;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
-public class Producto {
+public class Producto{
 
 	private String nombre;
 	private String descripcion;
@@ -35,6 +36,32 @@ public class Producto {
 		this.setPrecio(precio);
 		this.setFechaAlta(LocalDate.now());
 		this.setStock(minStock);
+	}
+	
+	@Override
+	public String toString() {
+		return this.getNombre()+" ("+this.getPrecio()+")";
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(nombre, precio);
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(this == obj)
+			return true;
+		if(obj == null)
+			return false;
+		if(getClass() != obj.getClass())
+			return false;
+		
+		Producto otro = (Producto) obj;
+		if(this.hashCode() == otro.hashCode())
+			return true;
+		else
+			return false;
 	}
 	
 	public String getNombre() {

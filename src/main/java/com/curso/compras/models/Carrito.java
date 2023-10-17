@@ -1,24 +1,49 @@
 package com.curso.compras.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.curso.compras.excepciones.NoHayStockException;
 import com.curso.compras.excepciones.NoSuperoMontoMinException;
 
 public class Carrito {
 
 	private Persona persona;
-	private ItemCarrito item1;
-	private ItemCarrito item2;
-	private ItemCarrito item3;
+	private List<ItemCarrito> items;
 	
-	public Carrito() {};
+	public Carrito() {
+		//Cada instancia de esta clase, va a tener asociado una lista de Items
+		this.items = new ArrayList<ItemCarrito>();
+	}
 	
 	public Carrito(Persona persona) {
+		this.items = new ArrayList<ItemCarrito>();
 		this.setPersona(persona);
-	}	
+	}
 	
+	//Si no queremos dar acceso directo a la lista de items de la instancia
+	//retornamos una copia
+	public List<ItemCarrito> getItems(){
+		List<ItemCarrito> items1 = new ArrayList<ItemCarrito>();
+		items1.addAll(this.items);
+		return items1;
+	}
+	
+	public void agregarItem(ItemCarrito ic) {
+		this.items.add(ic);
+	}
+	
+	public void quitarItem(ItemCarrito ic) {
+		this.items.remove(ic);
+	}
+		
 	public Double getCostoFinal() throws NoHayStockException, NoSuperoMontoMinException{
 		Double costoFinal = 0.0; //variable de acumulación
-		costoFinal = this.item1.getPrecio() + this.item2.getPrecio() + this.item3.getPrecio();	
+		
+		//Trabajo similar a un array
+		for(ItemCarrito item : this.items) {
+			costoFinal = costoFinal + item.getProducto().getPrecio()*item.getCantidad();
+		}
 		
 		//Si no supera 5000, no puede comprar
 		if(costoFinal < 5000) {
@@ -38,26 +63,5 @@ public class Carrito {
 	public void setPersona(Persona persona) {
 		this.persona = persona;
 	}
-	public ItemCarrito getItem1() {
-		return item1;
-	}
-	public void setItem1(ItemCarrito item1) {
-		this.item1 = item1;
-	}
-	public ItemCarrito getItem2() {
-		return item2;
-	}
-	public void setItem2(ItemCarrito item2) {
-		this.item2 = item2;
-	}
-	public ItemCarrito getItem3() {
-		return item3;
-	}
-	public void setItem3(ItemCarrito item3) {
-		this.item3 = item3;
-	}
-	
-	
-	
 	
 }

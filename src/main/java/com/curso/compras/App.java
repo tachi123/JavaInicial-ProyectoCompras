@@ -1,5 +1,8 @@
 package com.curso.compras;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import com.curso.compras.excepciones.*;
 import com.curso.compras.models.*;
 
@@ -29,10 +32,17 @@ public class App
     	//Creo un carrito
     	Carrito unCarrito = new Carrito(unaPersona);
     	
-    	unCarrito.setItem1(item1); //Agregó 3 productos de harina
-    	unCarrito.setItem2(item2); //Agregó 1 producto RoastBeef
-    	unCarrito.setItem3(item3); //Agregó 3 leches
-
+    	unCarrito.agregarItem(item1); //Agregó 3 productos de harina
+    	unCarrito.agregarItem(item2); //Agregó 1 producto RoastBeef
+    	unCarrito.agregarItem(item3); //Agregó 3 leches    	
+    	
+    	//Creo otro carrito
+    	Carrito otroCarrito = new Carrito(unaPersona);
+    	//Pero al agregar items a la lista que me devuelve el método getItems
+    	//lo hago en una colección que es una copia
+    	//entonces, no estoy modificando la lista original de la instancia
+    	otroCarrito.getItems().addAll(unCarrito.getItems());
+    
     	try {
 	    	System.out.println("Costo final del carrito sin descuento: "+unCarrito.getCostoFinal());
 	    	System.out.println("Costo final del carrito con descuento fijo: "+unCarrito.getCostoFinal(desc1));
@@ -45,8 +55,17 @@ public class App
     		System.out.println("Salio todo bien");
     	}
     	
-    	
     	System.out.println("Sigue andando?");
+    	
+    	Set<Producto> productosDistintos = new HashSet<Producto>();
+    	
+    	Producto harina1 = new Producto("harina",2000.0);
+    	
+    	productosDistintos.add(leche);
+    	productosDistintos.add(harina);
+    	productosDistintos.add(harina1);
+    	
+    	System.out.println(productosDistintos);
     	
     }
 }
