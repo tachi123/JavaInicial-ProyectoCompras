@@ -5,7 +5,7 @@
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
     <property name="java.vm.version" value="25.221-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="F:\Argentina Programa 4.0\Desarrollador JAVA - NEORIS\compras"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\TachoAdmin\git\JavaInicial-ProyectoCompras"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="F:\Argentina Programa 4.0\Desarrollador JAVA - NEORIS\compras"/>
+    <property name="user.dir" value="C:\Users\TachoAdmin\git\JavaInicial-ProyectoCompras"/>
     <property name="java.runtime.version" value="1.8.0_221-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\endorsed"/>
@@ -29,7 +29,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Development\Maven\apache-maven-3.8.1\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:/Argentina Programa 4.0/eclipse-jee-2022-12-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933/jre/bin/server;F:/Argentina Programa 4.0/eclipse-jee-2022-12-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Development\Maven\apache-maven-3.8.1\bin;C:\Program Files\Java\jdk1.8.0_221;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;F:\ProyectoFinal\flutter_windows_3.3.0-stable\flutter\bin;C:\Program Files\MiKTeX\miktex\bin\x64\;C:\Development\Grails\grails-5.3.2\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\TachoAdmin\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Brackets\;C:\Users\TachoAdmin\AppData\Roaming\npm;C:\Program Files (x86)\TranscriberAG\libs;C:\Program Files (x86)\TranscriberAG\libs\gtkmm\bin;C:\Users\TachoAdmin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\TachoAdmin\AppData\Local\GitHubDesktop\bin;F:\Argentina Programa 4.0\eclipse-jee-2022-12-R-win32-x86_64\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;J:/Descargas/eclipse-java-2023-06-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502/jre/bin/server;J:/Descargas/eclipse-java-2023-06-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Development\Maven\apache-maven-3.8.1\bin;C:\Program Files\Java\jdk1.8.0_221;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;F:\ProyectoFinal\flutter_windows_3.3.0-stable\flutter\bin;C:\Program Files\MiKTeX\miktex\bin\x64\;C:\Development\Grails\grails-5.3.2\bin;C:\Users\TachoAdmin\AppData\Local\Programs\Python\Python312\;C:\Users\TachoAdmin\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\TachoAdmin\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Brackets\;C:\Users\TachoAdmin\AppData\Roaming\npm;C:\Program Files (x86)\TranscriberAG\libs;C:\Program Files (x86)\TranscriberAG\libs\gtkmm\bin;C:\Users\TachoAdmin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\TachoAdmin\AppData\Local\GitHubDesktop\bin;J:\Descargas\eclipse-java-2023-06-R-win32-x86_64\eclipse;;."/>
     <property name="maven.conf" value="C:\Development\Maven\apache-maven-3.8.1\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_221\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="es"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>

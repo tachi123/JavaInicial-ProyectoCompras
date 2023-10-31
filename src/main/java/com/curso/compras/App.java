@@ -9,7 +9,7 @@ import com.curso.compras.models.*;
 public class App 
 {
     public static void main( String[] args )
-    {
+    {    	
     	//Instancio una persona
     	Persona unaPersona = new Persona("Nahuel","Ramírez");
     	
